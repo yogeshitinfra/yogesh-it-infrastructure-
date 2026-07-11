@@ -1,6 +1,25 @@
-const menuToggle = document.getElementById("menu-toggle");
-const nav = document.getElementById("nav");
+// Smooth scrolling
+document.querySelectorAll('nav a').forEach(link => {
+    link.addEventListener('click', function(e) {
+        e.preventDefault();
 
-menuToggle.addEventListener("click", () => {
-    nav.classList.toggle("active");
+        const target = document.querySelector(this.getAttribute('href'));
+
+        if(target){
+            target.scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    });
+});
+
+// Header shadow on scroll
+window.addEventListener('scroll', function () {
+    const header = document.querySelector('header');
+
+    if(window.scrollY > 50){
+        header.style.boxShadow = "0 5px 15px rgba(0,0,0,0.3)";
+    } else {
+        header.style.boxShadow = "none";
+    }
 });
