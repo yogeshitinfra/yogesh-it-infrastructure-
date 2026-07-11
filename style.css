@@ -259,3 +259,32 @@ section h2{
     height:55px;
     border-radius:50%;
 }
+.menu-toggle{
+    display:none;
+    font-size:32px;
+    color:#fff;
+    cursor:pointer;
+}
+
+@media (max-width:768px){
+
+.menu-toggle{
+    display:block;
+    margin-top:10px;
+}
+
+nav{
+    display:none;
+    width:100%;
+    flex-direction:column;
+    text-align:center;
+}
+
+nav.active{
+    display:flex;
+}
+
+nav a{
+    margin:12px 0;
+}
+}
