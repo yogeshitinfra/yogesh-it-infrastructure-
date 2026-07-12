@@ -252,7 +252,7 @@ nav a{
     height:auto;
 }
     background-size:cover;
-    background-position:center;
+    background-position:top center;
 }
 .hero h1{
     font-size:22px;
