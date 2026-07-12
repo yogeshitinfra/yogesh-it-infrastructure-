@@ -52,4 +52,35 @@ const observer = new IntersectionObserver((entries) => {
 fades.forEach(section => {
     observer.observe(section);
 });
+// Counter Animation
+const counters = document.querySelectorAll("#stats h3");
 
+const counterObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+
+            counters.forEach(counter => {
+
+                const target = parseInt(counter.innerText);
+                let count = 0;
+
+                const update = () => {
+                    count += Math.ceil(target / 50);
+
+                    if (count >= target) {
+                        counter.innerText = target + "+";
+                    } else {
+                        counter.innerText = count;
+                        requestAnimationFrame(update);
+                    }
+                };
+
+                update();
+            });
+
+            counterObserver.disconnect();
+        }
+    });
+});
+
+document.querySelector("#stats") && counterObserver.observe(document.querySelector("#stats"));
