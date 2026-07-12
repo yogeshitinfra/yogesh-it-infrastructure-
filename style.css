@@ -249,10 +249,10 @@ nav a{
 
 .hero{
     min-height:100vh;
-    height:auto;
-    background-size:contain;
-    background-position:top center;
+    background-size:cover;
+    background-position:center;
     background-repeat:no-repeat;
+
 }
 .hero h1{
     font-size:22px;
