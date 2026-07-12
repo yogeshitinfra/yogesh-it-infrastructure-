@@ -287,4 +287,26 @@ nav.active{
 nav a{
     margin:12px 0;
 }
+.hero-text{
+    font-size:20px;
+    margin:20px 0;
+    color:#ffffff;
+    line-height:1.8;
 }
+
+.hero h1{
+    font-size:56px;
+    font-weight:700;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:34px;
+}
+
+.hero-text{
+    font-size:18px;
+}
+
+
