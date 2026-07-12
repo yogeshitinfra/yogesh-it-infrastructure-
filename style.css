@@ -308,5 +308,22 @@ nav a{
 .hero-text{
     font-size:18px;
 }
+.card{
+    transition: all 0.3s ease;
+    border-radius: 12px;
+    overflow: hidden;
+}
 
+.card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+}
+
+.card img{
+    transition: transform 0.3s ease;
+}
+
+.card:hover img{
+    transform: scale(1.08);
+}
 
