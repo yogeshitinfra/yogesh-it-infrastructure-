@@ -115,12 +115,20 @@ section h2{
 #about{
     background:#ffffff;
     text-align:center;
+    padding:70px 20px;
+}
+
+#about h2{
+    font-size:36px;
+    color:#0b3d91;
+    margin-bottom:20px;
 }
 
 #about p{
     max-width:900px;
     margin:auto;
     font-size:18px;
+    line-height:1.8;
     color:#555;
 }
 
