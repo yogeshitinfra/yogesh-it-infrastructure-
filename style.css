@@ -251,7 +251,7 @@ nav a{
     min-height:100vh;
     height:auto;
 }
-    background-size:cover;
+    background-size:contain;
     background-position:top center;
 }
 .hero h1{
