@@ -250,9 +250,9 @@ nav a{
 .hero{
     min-height:100vh;
     height:auto;
-}
     background-size:contain;
     background-position:top center;
+    background-repeat:no-repeat;
 }
 .hero h1{
     font-size:22px;
