@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://yogeshitinfra.github.io/yogesh-it-infrastructure-/sitemap.xml
